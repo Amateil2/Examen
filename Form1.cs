@@ -64,7 +64,9 @@ namespace Examen
         {
             if (textBox1.Text == "user" && textBox2.Text == "user")
             {
-                //Form Main = new Main();
+                Form Main = new Main();
+                Main.Show();
+                this.Hide();
             }
             else
             {
@@ -84,6 +86,11 @@ namespace Examen
                 pwd = true;
                 textBox2.PasswordChar = '\0';
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
